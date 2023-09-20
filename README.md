@@ -8,6 +8,10 @@ Underlying adapter code for Expo SQLite PouchDB adapters.
 npm install --save-exact @wanpy/pouchdb-adapter-expo-sqlite
 ```
 
+### Example
+
+https://github.com/craftzdog/pouchdb-react-native#install
+
 For full API documentation and guides on PouchDB, see [PouchDB.com](http://pouchdb.com/). For details on PouchDB sub-packages, see the [Custom Builds documentation](http://pouchdb.com/custom.html).
 
 ### Warning: semver-free zone!
