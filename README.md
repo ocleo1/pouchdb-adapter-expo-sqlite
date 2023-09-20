@@ -1,11 +1,11 @@
-# @craftzdog/pouchdb-adapter-websql-core ![semver non-compliant](https://img.shields.io/badge/semver-non--compliant-red.svg)
+# @wanpy/pouchdb-adapter-expo-sqlite ![semver non-compliant](https://img.shields.io/badge/semver-non--compliant-red.svg)
 
-Underlying adapter code for WebSQL and SQLite-based PouchDB adapters.
+Underlying adapter code for Expo SQLite PouchDB adapters.
 
 ### Usage
 
 ```bash
-npm install --save-exact @craftzdog/pouchdb-adapter-websql-core
+npm install --save-exact @wanpy/pouchdb-adapter-expo-sqlite
 ```
 
 For full API documentation and guides on PouchDB, see [PouchDB.com](http://pouchdb.com/). For details on PouchDB sub-packages, see the [Custom Builds documentation](http://pouchdb.com/custom.html).

@@ -1,12 +1,23 @@
 {
-  "name": "@craftzdog/pouchdb-adapter-websql-core",
+  "name": "@wanpy/pouchdb-adapter-expo-sqlite",
   "version": "7.2.3",
-  "description": "Underlying adapter code for WebSQL and SQLite-based PouchDB adapters.",
-  "main": "./src/index.js",
-  "keywords": [],
-  "author": "Dale Harvey <dale@arandomurl.com>",
+  "description": "Underlying adapter code for Expo SQLite PouchDB adapters.",
+  "keywords": [
+    "pouchdb",
+    "expo",
+    "sqlite",
+    "websql"
+  ],
+  "author": "Christopher Wan <wpy.christopher@gmail.com>",
+  "repository": "https://github.com/ocleo1/pouchdb-adapter-expo-sqlite",
   "license": "Apache-2.0",
-  "repository": "https://github.com/pouchdb/pouchdb",
+  "main": "./src/index.js",
+  "files": [
+    "src",
+    "package-lock.json",
+    "package-lock.json",
+    "README.md"
+  ],
   "dependencies": {
     "pouchdb-adapter-utils": "^7.2.2",
     "pouchdb-binary-utils": "^7.2.2",
@@ -15,11 +26,5 @@
     "pouchdb-json": "^7.2.2",
     "pouchdb-merge": "^7.2.2",
     "pouchdb-utils": "^7.2.2"
-  },
-  "module": "./lib/index.es.js",
-  "files": [
-    "src",
-    "dist",
-    "tonic-example.js"
-  ]
+  }
 }
