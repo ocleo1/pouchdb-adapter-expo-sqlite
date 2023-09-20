@@ -36,6 +36,7 @@ import {
 } from 'pouchdb-errors';
 
 import {
+  ADAPTER_NAME,
   ADAPTER_VERSION,
   DOC_STORE,
   BY_SEQ_STORE,
@@ -1169,4 +1170,18 @@ function WebSqlPouch(opts, callback) {
   };
 }
 
-export default WebSqlPouch;
+// https://github.com/craftzdog/pouchdb-adapter-react-native-sqlite/blob/master/lib/index.js
+
+WebSqlPouch.valid = function () {
+  // if you're using ReactNative, we assume you know what you're doing because you control the environment
+  return true
+}
+
+// no need for a prefix in ReactNative (i.e. no need for `_pouch_` prefix
+WebSqlPouch.use_prefix = false
+
+export default function (PouchDB) {
+  PouchDB.adapter(ADAPTER_NAME, WebSqlPouch, true);
+}
+
+export { ADAPTER_NAME } from './constants';

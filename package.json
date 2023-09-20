@@ -19,6 +19,7 @@
     "README.md"
   ],
   "dependencies": {
+    "expo-sqlite": "~11.1.1",
     "pouchdb-adapter-utils": "^7.2.2",
     "pouchdb-binary-utils": "^7.2.2",
     "pouchdb-collections": "^7.2.2",

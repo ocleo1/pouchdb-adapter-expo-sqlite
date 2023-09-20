@@ -2,6 +2,8 @@ function quote(str) {
   return "'" + str + "'";
 }
 
+var ADAPTER_NAME = 'expo-sqlite';
+
 var ADAPTER_VERSION = 7; // used to manage migrations
 
 // The object stores created for each database
@@ -19,6 +21,7 @@ var META_STORE = quote('metadata-store');
 var ATTACH_AND_SEQ_STORE = quote('attach-seq-store');
 
 export {
+  ADAPTER_NAME as ADAPTER_NAME,
   ADAPTER_VERSION as ADAPTER_VERSION,
   DOC_STORE as DOC_STORE,
   BY_SEQ_STORE as BY_SEQ_STORE,

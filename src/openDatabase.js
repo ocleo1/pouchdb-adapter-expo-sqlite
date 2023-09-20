@@ -1,11 +1,11 @@
 'use strict';
 
+import * as SQLite from 'expo-sqlite';
 
 var cachedDatabases = new Map();
 
-// openDatabase passed in through opts (e.g. for node-websql)
 function openDatabaseWithOpts(opts) {
-  return opts.websql(opts.name, opts.version, opts.description, opts.size);
+  return SQLite.openDatabase(opts.name, opts.version, opts.description, opts.size);
 }
 
 function openDBSafely(opts) {
